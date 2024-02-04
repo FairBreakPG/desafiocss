@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;500&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans-serif", sans-serif;
+}
+
+.barraSuperiot {
+    grid-area: nav;
+    background-color: yellow;
+    text-align: center;
+
+
+}
+
+
+
+.menuLateral {
+    grid-area: aside;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+
+
+}
+
+.btnCompra {
+    background-color: #0693e3;
+    width: 340px;
+    height: 40px;
+
+
+    color: white;
+    font-size: 0.95em;
+    
+
+}
+
+.imgP {
+    height: 200px;
+    width: 340px;
+}
+
+.contenedorTarjeta {
+    grid-area: seccion;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+}
+
+.tarjeta {
+    height: 200px;
+    width: 340px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.contenedor {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        'nav nav'
+        'aside seccion'
+        'footer footer'
+    ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.main {
+    overflow-y: auto;
+    max-height: calc(100vh - 50px);
+}
+
+.tarjeta h2 {
+    margin-bottom: 10px;
+
+}
+
+.tarjeta p {
+    margin-bottom: 10px;
+
+}
+.menuLateral ul li {
+    margin-bottom: 10px; 
+  }
+  
+  .menuLateral ul li:last-child {
+    margin-bottom: 0; 
+  }
+  
